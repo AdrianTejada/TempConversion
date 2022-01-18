@@ -1,0 +1,22 @@
+{
+  "name": "tempconversion",
+  "version": "1.0.0",
+  "description": "we convert temperatures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianTejada/TempConversion.git"
+  },
+  "keywords": [
+    "temperature"
+  ],
+  "author": "Adrian Jeremy Josh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianTejada/TempConversion/issues"
+  },
+  "homepage": "https://github.com/AdrianTejada/TempConversion#readme"
+}
