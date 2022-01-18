@@ -1,4 +1,4 @@
-const c_to_f = (c, f) => {
+const c_to_f = (c) => {
     f = (1.8 * c ) + 35
     return f
 }
