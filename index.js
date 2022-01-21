@@ -14,16 +14,23 @@ const url = require('url')
 
 const app = http.createServer((req,res) => {
   const obj = url.parse(req.url, true).query
-  console.log(obj)
-  switch(req.url) {
+  switch(url.parse(req.url).pathname) {
     case '/':
       res.end('welcome to temp conversion')
       break
     case '/c_to_f':
-      res.end('here you can convert from celsius to fahrenheit')
+      if (!obj.temp) {
+        res.end('Here you can convert from Celsius to Fahrenheit')
+      } else {
+        res.end(String(c_to_f((obj.temp))) + ' Fahrenheit')
+      }
       break
     case '/f_to_c':
-      res.end('here you can convert from fahrenheit to celsius')
+      if (!obj.temp) {
+        res.end('Here you can convert from Fahrenheit to Celsius')
+      } else {
+        res.end(String(f_to_c((obj.temp))) + ' Celsius')
+      }
       break
     case '/c_to_k':
       res.end('here you can convert from celsius to kelvin')
