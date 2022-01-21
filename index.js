@@ -36,7 +36,11 @@ const app = http.createServer((req,res) => {
       res.end('here you can convert from celsius to kelvin')
       break
     case '/k_to_c':
-      res.end('here you can convert from kelvin to celsius')
+        if (!obj.temp) {
+            res.end('here you can convert from Kelvin to Celsius')
+          } else {
+            res.end(String(c_to_f((obj.temp))) + ' Celsius')
+          }
       break
     default:
       res.end('wrong url')
