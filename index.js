@@ -42,7 +42,7 @@ const app = http.createServer((req,res) => {
         if (!obj.temp) {
             res.end('here you can convert from Kelvin to Celsius')
           } else {
-            res.end(String(c_to_f((obj.temp))) + ' Celsius')
+            res.end(String(k_to_c((obj.temp))) + ' Celsius')
           }
       break
     default:
