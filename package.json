@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AdrianTejada/TempConversion/issues"
   },
-  "homepage": "https://github.com/AdrianTejada/TempConversion#readme"
+  "homepage": "https://github.com/AdrianTejada/TempConversion#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
