@@ -3,7 +3,7 @@ const c_to_k = (req,res) => {
     
     let k = (c +  273.15)
 
-    res.json(k)
+    res.json(parseInt(k))
 }
 
 module.exports = c_to_k

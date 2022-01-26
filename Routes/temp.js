@@ -6,9 +6,9 @@ router.get('/c_to_f/:temp', c_to_f)
 
 router.get('/f_to_c/:temp',f_to_c)
 
-router.get('c_to_k/:temp', c_to_k)
+router.get('/c_to_k/:temp', c_to_k)
 
-router.get('k_to_c/:temp', k_to_c)
+router.get('/k_to_c/:temp', k_to_c)
 
 
 router.get('/',(req,res)=>{
