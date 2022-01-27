@@ -2,24 +2,24 @@ const express = require('express');
 const router = express.Router();
 const { c_to_f, f_to_c, c_to_k, k_to_c} = require('../Operations/index.js')
 
-const defaultMessage = (req, res) => {
+const welcomeMessage = (req, res) => {
   res.send("Welcome to our temperature conversion")
 }
 
 const defaultMessage1 = (req, res) => {
-  res.send("Welcome to our temperature conversion 1")
+  res.send("Here you can convert from Celsius to Fahrenheit")
 }
 
 const defaultMessage2 = (req, res) => {
-  res.send("Welcome to our temperature conversion 2")
+  res.send("Here you can convert from Fahrenheit to Celsius")
 }
 
 const defaultMessage3 = (req, res) => {
-  res.send("Welcome to our temperature conversion 3")
+  res.send("Here you can convert from Celsius to Kelvin")
 }
 
 const defaultMessage4 = (req, res) => {
-  res.send("Welcome to our temperature conversion 4")
+  res.send("Here you can convert from Kelvin to Celsius")
 }
 
 const addTemp1  = (req, res) => {
@@ -46,7 +46,7 @@ const addTemp4  = (req, res) => {
   res.json(temp)
 }
 
-router.get('/', defaultMessage)
+router.get('/', welcomeMessage)
 
 
 router.get('/c_to_f/', defaultMessage1)
