@@ -10,7 +10,6 @@ router.get('/c_to_k/:temp', c_to_k)
 
 router.get('/k_to_c/:temp', k_to_c)
 
-
 router.get('/',(req,res)=>{
     res.send('home directory')
 })
