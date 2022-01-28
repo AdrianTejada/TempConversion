@@ -1,6 +1,7 @@
-const k_to_c = (k, c) => {
-    c = (k - 273.15)
-    return c
+const k_to_c = (req,res) => {
+    let k = req.params.temp
+    let c = (parseInt(k) - 273.15)
+    res.status(200).json(c + ' Celsius')
 }
 
 module.exports = k_to_c 
